@@ -1,0 +1,68 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+html *
+{
+  font-family: 'Source Sans Pro', serif;
+}
+
+.content-box {
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.navbar-item {
+  color: green
+}
+
+.title {
+  padding-bottom: 25px;
+}
+
+.pdf
+{
+  background-image: url('pdf.png');
+  background-repeat: no-repeat;
+  padding-left: 35px;  /* width of the image plus a little extra padding */
+  display: inline;  /* may not need this, but I've found I do */
+  font-weight:bold;
+}
+
+.bitbucket
+{
+  background-image: url('bitbucket.png');
+  background-repeat: no-repeat;
+  padding-left: 33px;  /* width of the image plus a little extra padding */
+  display: inline;  /* may not need this, but I've found I do */
+  font-weight:bold;
+}
+
+.gmail
+{
+  background-image: url('gmail.png');
+  background-repeat: no-repeat;
+  padding-left: 33px;  /* width of the image plus a little extra padding */
+  display: inline;  /* may not need this, but I've found I do */
+  font-weight:bold;
+}
+
+hr
+{
+  background-color: #000;
+  height: 1px;
+  border: 0;
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
+
+}
