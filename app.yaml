@@ -1,54 +1,13 @@
-application: maxnelso
-version: 1
 runtime: python27
 api_version: 1
-threadsafe: false
+threadsafe: true
 
 handlers:
 
-- url: /favicon.ico
-  static_files: src/static/img/favicon.ico
-  upload: src/static/img
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
 
-- url: /max.jpg
-  static_files: src/static/img/max.jpg
-  upload: src/static/img
-
-- url: /pdf.png
-  static_files: src/static/img/pdf.png
-  upload: src/static/img
-
-- url: /bitbucket.png
-  static_files: src/static/img/bitbucket.png
-  upload: src/static/img
-
-- url: /gmail.png
-  static_files: src/static/img/gmail.png
-  upload: src/static/img
-
-- url: /resume.pdf
-  static_files: src/static/downloadable/resume.pdf
-  upload: src/static/downloadable
-
-- url: /maxnelso.css
-  static_files: src/static/css/maxnelso.css
-  upload: src/static/css
-
-- url: /robots.txt
-  static_files: src/static/robots.txt
-  upload: src/static/robots.txt
-
-- url: /bootstrap.min.css
-  static_files: src/static/css/bootstrap.min.css
-  upload: src/static/css
-
-- url: /maxnelso.js
-  static_files: src/static/js/maxnelso.js
-  upload: src/static/js
-
-- url: /bootstrap.min.js
-  static_files: src/static/js/bootstrap.min.js
-  upload: src/static/js
-
-- url: /.*
-  script: src/handlers.py
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
